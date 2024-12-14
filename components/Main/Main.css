@@ -94,7 +94,6 @@ ul {
 @media (max-width: 600px) {
   .filter-btn {
     height: 5rem;
-    width: auto;
     padding: 15px;
   }
 }

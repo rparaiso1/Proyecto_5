@@ -52,6 +52,7 @@ export const showProducts = (filter) => {
         `).join('')}
       </ul>
     `;
+    
     setupAddToCartButtons(filter);
   }
 };
