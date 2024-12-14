@@ -61,6 +61,10 @@ main {
   transform: scale(1.02);
 }
 
+.filter-btn.active {
+  background-color: var(--dark-secondary-color);
+}
+
 #empty-cart {
   margin-top: 5rem;
   padding: 10px;

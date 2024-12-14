@@ -5,7 +5,6 @@ import { dataProducts } from '../../../data/dataProducts.js';
 import { cleanPage } from '../../../utils/cleanPage.js';
 import { addToCart } from '../Products/cart.js';
 
-
 export const Products = () => {
   const main = document.querySelector('main');
   cleanPage(main);
@@ -27,6 +26,10 @@ const setupFilterButtons = () => {
   const filterContainer = document.querySelector('.filters');
   buttons.forEach(button => {
     button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      button.classList.add('active');
+      
       filterContainer.classList.add('active');
       showProducts(button.dataset.type);
     });
